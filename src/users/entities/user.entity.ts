@@ -10,7 +10,7 @@ export class User {
     type: 'varchar',
     length: 255,
     nullable: false,
-    default: '',
+    default : ''
   })
   name: string;
 

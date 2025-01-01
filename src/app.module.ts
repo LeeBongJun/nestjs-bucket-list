@@ -7,6 +7,7 @@ import { UsersModule } from './users/users.module';
 import { DestinationsModule } from './destinations/destinations.module';
 import { BucketListsModule } from './bucket-lists/bucket-lists.module';
 import { BucketListItemsModule } from './bucket-list-items/bucket-list-items.module';
+import { AuthModule } from './auth/auth.module';
 import typeorm from './config/typeorm';
 
 @Module({
@@ -25,6 +26,7 @@ import typeorm from './config/typeorm';
     DestinationsModule,
     BucketListsModule,
     BucketListItemsModule,
+    AuthModule,
   ],
   controllers: [AppController],
   providers: [AppService],

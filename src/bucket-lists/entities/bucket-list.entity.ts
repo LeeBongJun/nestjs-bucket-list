@@ -1,8 +1,9 @@
 import { BucketListItem } from "./../../bucket-list-items/entities/bucket-list-item.entity";
 import { User } from "src/users/entities/user.entity";
-import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, Index, ManyToOne, OneToMany, PrimaryGeneratedColumn } from "typeorm";
 
 @Entity()
+@Index(['name' , 'user'] , { unique : true})
 export class BucketList {
   @PrimaryGeneratedColumn()
   id : number;

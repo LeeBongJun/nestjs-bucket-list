@@ -71,7 +71,8 @@ export class BucketListItemsService {
     return this.bucketListItemRepository.find({
       where : {
           bucketList : { id : bucketListId  , user : {id : userId }},
-      }
+      },
+      
     })
   }
 
